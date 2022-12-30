@@ -4,6 +4,7 @@
 <form>
 <form [formGroup]="miFormulario" (ngSubmit)="guardar()">
 
+    <!-- Regiones -->
     <div class="row mb-3">
         <div class="col">
             <label class="form-label">Continente:</label>
@@ -13,6 +14,21 @@
                 <option *ngFor="let region of regiones"
                         [value]="region">
                     {{region | titlecase}} 
+                </option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Paises -->
+    <div class="row mb-3">
+        <div class="col">
+            <label class="form-label">Continente:</label>
+            <select class="form-control"
+                    formControlName="pais">
+                <option value=""> -- Selecione País -- </option>
+                <option *ngFor="let pais of paises"
+                        [value]="pais.alpha3Code">
+                    {{pais.name | titlecase}} 
                 </option>
             </select>
         </div>
