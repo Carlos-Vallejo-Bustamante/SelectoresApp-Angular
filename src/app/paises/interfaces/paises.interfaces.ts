@@ -1,6 +1,7 @@
 export interface PaisSmall {
     name: string;
     alpha3Code: string;
+<<<<<<< HEAD
 }
 
 export interface Pais {
@@ -85,3 +86,6 @@ export interface Translations {
     it: string;
     hu: string;
 }
+=======
+}
+>>>>>>> 7701889e43dc34d809cc996098715750deb758ca

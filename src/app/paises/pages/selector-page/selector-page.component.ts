@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { switchMap, tap } from 'rxjs/operators';
-import { PaisSmall, Pais } from '../../interfaces/paises.interfaces';
-
 import { PaisesService } from '../../services/paises.service';
 
 @Component({

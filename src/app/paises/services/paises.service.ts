@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Pais, PaisSmall } from '../interfaces/paises.interfaces';
@@ -8,6 +9,8 @@ import { Pais, PaisSmall } from '../interfaces/paises.interfaces';
 })
 export class PaisesService {
 
+  private _baseUrl: string = 'https://restcountries.com/v2';
+  private _regiones: string[] = ['africa', 'americas', 'asia', 'europe', 'oceania'];
   private _baseUrl: string = 'https://restcountries.com/v2';
   private _regiones: string[] = ['africa', 'americas', 'asia', 'europe', 'oceania'];
 
